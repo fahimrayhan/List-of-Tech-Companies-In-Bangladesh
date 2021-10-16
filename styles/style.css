@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+    margin-top: 10px;
+}
+
+.header-title{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.nav-links{
+    text-align: center;
+    margin: 15px 0 15px 0;
+    height:45px;
+    background-color: #c0c0c0;
+    padding: 13px;
+}
+
+.nav-links li{
+    display: inline;
+    background-color: #8080ff;
+    padding: 8px;
+    border-radius: 5%;
+}
+.nav-links a{
+     text-decoration: none;
+     color: #ffffff;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    background-color: #323232;
+    padding: 50px;
+}
+
+.search input{
+    height: 32px;
+    margin: 2px;
+}
+
+.search input[type="search"]{
+    min-width: 260px;
+    padding: 5px;
+}
+
+.search input[type="search"]:focus{
+    outline-color: #8080ff;
+}
+
+.search input[type="submit"]{
+    width: 120px;
+}
+.search input[type="submit"]:hover{
+    background-color: #8080ff;
+    color: #fff;
+    border:none;
+}
+
+.Cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.card-items{
+    margin: 10px;
+    border: 1px solid #8080ff;
+    padding: 15px;
+    min-width: 300px;
+    min-height: 350px;
+
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.type-date{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+.links li{
+    display: inline;
+}
+
+.links a{
+    text-decoration: none;
+}
+
+.card-items:hover{
+   border: 1px solid #008080;
+   box-shadow: 1px 1px 5px 1px #008080;
+}
+
+.footer{
+    margin: 15px, 0, 15px, 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #008080;
+    color: #fff;
+}
+
+/* Responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Cards {
+        grid-template-columns: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .Cards {
+        grid-template-columns: auto auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .Cards {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .Cards {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .Cards {
+        grid-template-columns: auto auto auto auto;
+    }
+}
