@@ -79,16 +79,22 @@ body{
     margin: 10px;
     border: 1px solid #8080ff;
     padding: 15px;
-    min-width: 320px;
-    min-height: 400px;
+    width: 350px;
+    height: 400px;
     display: grid;
     grid-template-columns: auto;
 }
 
 .type-date{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 10px;
+}
+
+.desc{
+    text-align: left;
+    width: fit-content;
+    margin-bottom: 10px;
 }
 
 .links li{
@@ -111,6 +117,17 @@ body{
     background-color: #008080;
     color: #fff;
 }
+
+.icon{
+    color: #008080;
+    font-size: 1.4rem;
+    margin: 5px;
+}
+
+.icon:hover{
+    color:#8080ff;
+}
+
 
 /* Responsive */
 /* Extra small devices (phones, 600px and down) */

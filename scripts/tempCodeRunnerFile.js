@@ -1,1 +1,1 @@
-document
+import Companies from "./data";
