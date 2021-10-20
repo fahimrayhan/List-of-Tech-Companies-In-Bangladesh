@@ -1,68 +1,7 @@
 
 const card = document.getElementsByClassName('Cards')[0];
 
-// Company Data
-const Companies = [
-    {
-        name: "Apple",
-        logo: 'assets/Your Logo Here - 320x100.png',
-        type: "Company",
-        founded: 2021,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
-        links: {
-            web: 'https://www.apple.com/',
-            fb: 'https://www.facebook.com/apple',
-            ld: 'https://www.linkedin.com/apple',
-            tw: 'https://www.twitter.com/apple',
-        }
-
-    },
-    {
-        name: "Apple",
-        logo: 'assets/Your Logo Here - 320x100.png',
-        type: "Company",
-        founded: 2021,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
-        links: {
-            web: 'https://www.apple.com/',
-            fb: 'https://www.facebook.com/apple',
-            ld: 'https://www.linkedin.com/apple',
-            tw: 'https://www.twitter.com/apple',
-        }
-
-    },
-    {
-        name: "Apple",
-        logo: 'assets/Your Logo Here - 320x100.png',
-        type: "Company",
-        founded: 2021,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
-        links: {
-            web: 'https://www.apple.com/',
-            fb: 'https://www.facebook.com/apple',
-            ld: 'https://www.linkedin.com/apple',
-            tw: 'https://www.twitter.com/apple',
-        }
-
-    },
-    {
-        name: "Apple",
-        logo: 'assets/Your Logo Here - 320x100.png',
-        type: "Company",
-        founded: 2021,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
-        links: {
-            web: 'https://www.apple.com/',
-            fb: 'https://www.facebook.com/apple',
-            ld: 'https://www.linkedin.com/apple',
-            tw: 'https://www.twitter.com/apple',
-        }
-
-    },
-
-];
-
-const cardList =  Companies.map((company) => {
+const cardList = Companies.map((company) => {
     return(
        `
        <div class="card-items">
@@ -88,6 +27,6 @@ const cardList =  Companies.map((company) => {
        </div>
        `
     )
-}).join('')
+}).join('');
 
 card.innerHTML = cardList;
