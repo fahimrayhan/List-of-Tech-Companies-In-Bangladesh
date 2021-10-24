@@ -1,1 +1,0 @@
-import Companies from "./data";
